@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="30.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+    <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+    <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+    <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+    <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="labelAction" text="%customerinput.label.addcustomer" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label text="%customerinput.label.name" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%customerinput.label.phone" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%customerinput.label.address" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%customerinput.label.postalcode" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%customerinput.label.country" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%customerinput.label.division" GridPane.columnIndex="3" GridPane.rowIndex="5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputName" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputPhone" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputAddress" promptText="ex: 123 ABC Street, White Plains" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputPostalCode" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+      <ComboBox fx:id="inputCountry" prefWidth="150.0" GridPane.columnIndex="2" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="NEVER" />
+      <ComboBox fx:id="inputDivision" prefWidth="150.0" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="5" GridPane.vgrow="NEVER" />
+      <Button mnemonicParsing="false" onAction="#onClickSave" text="%customerinput.button.save" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+      <Button mnemonicParsing="false" onAction="#onClickCancel" text="%customerinput.button.cancel" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" />
+   </children>
+</GridPane>

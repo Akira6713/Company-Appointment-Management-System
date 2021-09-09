@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="20.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+      <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+    <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+      <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+      <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+    <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+  </rowConstraints>
+   <children>
+      <ComboBox fx:id="inputCustomer" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <ComboBox fx:id="inputBy" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <ComboBox fx:id="inputTypeMonth" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Label text="%viewreport.label.customer" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%viewreport.label.by" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelTypeMonth" text="%viewreport.label.type" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="inputContact" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label text="%viewreport.label.countcustomerappointsbytypeormonth" GridPane.columnIndex="1" GridPane.columnSpan="3">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label text="%viewreport.label.contact" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%viewreport.label.appointmentsofcontact" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="4">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label text="%viewreport.label.appointmentswithuser" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="7">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button mnemonicParsing="false" onAction="#onClickCountCustomerAppointment" text="%viewreport.button.viewreport" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
+      <Button mnemonicParsing="false" onAction="#onClickViewAppointmentsOfContact" text="%viewreport.button.viewreport" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+      <Button mnemonicParsing="false" onAction="#onClickAppointmentsWithUser" text="%viewreport.button.viewreport" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="7" GridPane.valignment="CENTER" />
+   </children>
+</GridPane>

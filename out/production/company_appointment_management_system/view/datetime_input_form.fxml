@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="30.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/15.0.1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+      <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+      <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+      <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+    <ColumnConstraints hgrow="NEVER" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" vgrow="NEVER" />
+  </rowConstraints>
+   <children>
+      <ComboBox fx:id="inputMonth" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <ComboBox fx:id="inputDay" prefWidth="150.0" GridPane.columnIndex="2" GridPane.hgrow="NEVER" GridPane.rowIndex="2" />
+      <ComboBox fx:id="inputYear" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <ComboBox fx:id="inputHour" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <ComboBox fx:id="inputMinute" prefWidth="150.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <ComboBox fx:id="inputAmPm" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <Button mnemonicParsing="false" onAction="#onClickPick" text="%datetimeinput.button.pick" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Button mnemonicParsing="false" onAction="#onClickCancel" text="%datetimeinput.button.cancel" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <Label fx:id="labelTitle" GridPane.columnIndex="2">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label text="%datetimeinput.label.month" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%datetimeinput.label.day" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%datetimeinput.label.year" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%datetimeinput.label.hour" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%datetimeinput.label.minute" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%datetimeinput.label.ampm" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>

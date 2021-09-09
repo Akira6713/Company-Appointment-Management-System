@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" vgap="30.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+    <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+      <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+    <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+      <RowConstraints minHeight="10.0" vgrow="ALWAYS" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="labelAction" text="%appointmentinput.label.addappointment" GridPane.columnIndex="3" GridPane.columnSpan="2">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label text="%appointmentinput.label.title" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%appointmentinput.label.description" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%appointmentinput.label.location" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%appointmentinput.label.type" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%appointmentinput.label.startdatetime" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%appointmentinput.label.enddatetime" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%appointmentinput.label.customer" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label text="%appointmentinput.label.contact" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="inputTitle" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputDescription" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputLocation" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputType" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputStartDateTime" editable="false" onMouseClicked="#onPickStartDateTime" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="inputEndDateTime" editable="false" onMouseClicked="#onPickEndDateTime" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="inputCustomer" prefWidth="150.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="6" />
+      <ComboBox fx:id="inputContact" prefWidth="150.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="7" />
+      <Button mnemonicParsing="false" onAction="#onClickSave" text="%appointmentinput.button.save" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+      <Button mnemonicParsing="false" onAction="#onClickCancel" text="%appointmentinput.button.cancel" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="9" />
+   </children>
+</GridPane>
